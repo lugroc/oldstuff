@@ -1,0 +1,278 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 11px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:hover h2{
+    font-size: 35px;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.productos p2{
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 20px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+form{
+    display: grid;
+    margin: 40px 0;
+}
+
+
+form label, form legend {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input{
+    margin: 0 0 28px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.radios{
+    display: grid;
+    grid-auto-flow: row;
+    padding: 20px;
+}
+
+.radios label input{
+    width: 50px;
+    margin-left: 40px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.selections{
+    margin-left: 60px;
+    padding: 30px;
+}
+
+.checkbox input{
+    width: auto;
+    margin: 0 10px;
+}
+
+.enviar{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 0 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+ thead{
+     background: #555555;
+     color: white;
+     font-weight: bold;
+ }
+
+ td, th{
+     border: 1px solid #000000;
+     padding: 8px 15px;
+ }
+
+/* Home styles */
+
+.banner{
+    width: 100%;
+ }
+
+ .principal{
+     width: 940px;
+     margin: 0 auto;
+     background: #FEFEFE;
+     padding: 3em;
+ }
+
+ .titulo-principal{
+     text-align: center;
+     font-size: 2em;
+     margin: 1em;
+     clear: left;
+ }
+
+ .principal p{
+     margin: 0 0 1em;
+ }
+
+ .principal strong{
+     font-weight: bold;
+ }
+
+ .principal em{
+     font-style: italic;
+ }
+
+ .tools{
+     width: 150px;
+     float: left;
+     margin-right: 20px;
+     border-radius: 12px;
+ }
+
+ .mapa{
+     background: linear-gradient(#FEFEFE, #888888);
+ }
+ .mapa div{
+     width: 940px;
+     margin: 0 auto;
+ }
+
+ .mapa p{
+     margin: 0 0 2em;
+     text-align: center;
+ }
+
+ .diferenciales{
+     background: #888888;
+     padding: 2em;
+ }
+
+ .contenido-diferenciales{
+     width: 940px;
+     margin: 0 auto;
+     padding: 2em;
+ }
+
+ .listaDiferenciales{
+     display: inline-block;
+     vertical-align: top;
+     padding: 3em;
+ }
+
+ .imagenDiferenciales{
+     width: 50%;
+     box-shadow: 7px 7px 15px #000000;
+ }
+
+ .items{
+     line-height: 1.5;
+ }
+
+ .items:before{
+     content: "★";
+ }
+
+ .items:first-child{
+     font-weight: bold;
+ }
+
+ @media screen and (max-width:480px){
+     h1{
+         text-align: center;
+     }
+
+     nav{
+         position: static;
+     }
+
+    .caja, .principal, .mapa div, .contenido-diferenciales{
+        width: auto;
+    }
+    .listaDiferenciales, .imagenDiferenciales{
+        width: 100%;
+        padding: 0;
+    }
+ }
